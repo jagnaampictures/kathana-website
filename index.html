@@ -1061,6 +1061,28 @@
     border-radius: 12px;
   }
 }
+
+/* Kathana End Cover Artwork */
+.kathana-endcover-art {
+  display: block;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+.kathana-endcover-art img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+@media (max-width: 640px) {
+  .kathana-endcover-art {
+    margin-bottom: 32px;
+  }
+}
   </style>
 </head>
 <body data-lang="en">
@@ -1535,6 +1557,26 @@
 
   </div>
 </section>
+    
+    <!-- Pricing Pact with Beta Discount Callout -->
+  <section class="section" id="pricing">
+    <div class="pricing-card">
+      <div class="section-label" data-i18n="sec_pricing_label">The Writer's Pact</div>
+      <h3 style="font-family:var(--font-serif);font-size:26px;color:var(--ink);margin-top:6px" data-i18n="pricing_h3">Accessible to Every Serious Writer</h3>
+      <div class="pricing-price" data-i18n="pricing_val">₹0 (Free Beta)</div>
+      <div class="pricing-notes" data-i18n="pricing_desc">
+        Kathana is completely free during the beta. Pricing for the full release will be announced later, with individual writers paying only a small, accessible amount, while production houses and studios will pay a fair commercial license.
+      </div>
+      <div style="background:var(--accentbg);border:1px solid rgba(138,47,34,0.25);padding:14px 18px;border-radius:10px;font-size:14px;color:var(--accent);margin-bottom:20px;font-weight:600" data-i18n="pricing_beta_perk">
+        ✨ Free Beta v0.1.0: Full screenwriting functionality is free throughout the beta. Pricing for the full release will be announced later.
+      </div>
+      <div style="background:var(--surface2);padding:14px 18px;border-radius:8px;font-size:13.5px;color:var(--ink2);margin-bottom:24px" data-i18n="pricing_guarantee">
+        Your Files Stay With You: Your screenplay remains on your computer and is not dependent on cloud storage. Files are stored locally in open UTF-8 JSON, and opening or exporting your work to PDF, Final Draft, and Fountain is always possible on your machine.
+      </div>
+      <button class="btn-primary btn-hero" id="pricingStartBtn" data-i18n="btn_pricing_start">Download the Beta · Try 14 Days</button>
+    </div>
+  </section>
+    
     <!-- From the Maker Letter with authentic Kannada name and studio -->
   <section class="section" id="maker">
     <div class="maker-letter">
@@ -1555,35 +1597,15 @@
       </div>
     </div>
   </section>
-
-  <!-- Pricing Pact with Beta Discount Callout -->
-  <section class="section" id="pricing">
-    <div class="pricing-card">
-      <div class="section-label" data-i18n="sec_pricing_label">The Writer's Pact</div>
-      <h3 style="font-family:var(--font-serif);font-size:26px;color:var(--ink);margin-top:6px" data-i18n="pricing_h3">Accessible to Every Serious Writer</h3>
-      <div class="pricing-price" data-i18n="pricing_val">₹0 (Free Beta)</div>
-      <div class="pricing-notes" data-i18n="pricing_desc">
-        Kathana is completely free during the beta. Pricing for the full release will be announced later, with individual writers paying only a small, accessible amount, while production houses and studios will pay a fair commercial license.
-      </div>
-      <div style="background:var(--accentbg);border:1px solid rgba(138,47,34,0.25);padding:14px 18px;border-radius:10px;font-size:14px;color:var(--accent);margin-bottom:20px;font-weight:600" data-i18n="pricing_beta_perk">
-        ✨ Free Beta v0.1.0: Full screenwriting functionality is free throughout the beta. Pricing for the full release will be announced later.
-      </div>
-      <div style="background:var(--surface2);padding:14px 18px;border-radius:8px;font-size:13.5px;color:var(--ink2);margin-bottom:24px" data-i18n="pricing_guarantee">
-        Your Files Stay With You: Your screenplay remains on your computer and is not dependent on cloud storage. Files are stored locally in open UTF-8 JSON, and opening or exporting your work to PDF, Final Draft, and Fountain is always possible on your machine.
-      </div>
-      <button class="btn-primary btn-hero" id="pricingStartBtn" data-i18n="btn_pricing_start">Download the Beta · Try 14 Days</button>
-    </div>
-  </section>
     
-  <!-- Kathana Brand Artwork — Our Identity -->
-  <figure class="kathana-visual-card">
-    <img
-      src="images/kathana-brand.webp"
-      alt="Kathana brand artwork featuring its logo and name"
-      loading="lazy"
-    >
-    <figcaption>Our Identity</figcaption>
-  </figure>
+  <!-- Kathana End Cover Artwork -->
+<figure class="kathana-endcover-art">
+  <img
+    src="images/kathana-endcover.webp"
+    alt="Kathana end-cover artwork"
+    loading="lazy"
+  >
+</figure>
     
   </div><!-- /mainContent -->
 
