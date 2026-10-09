@@ -967,7 +967,7 @@
     /* Kathana Hero Artwork */
 .kathana-hero-art {
   width: 100%;
-  max-width: 760px;
+  max-width: 1200px;
   margin: 0 auto 48px;
   overflow: hidden;
   border-radius: 18px;
@@ -988,32 +988,36 @@
     border-radius: 12px;
   }
 }
-    /* Kathana Visual Showcase */
+
+/* Kathana Visual Showcase */
 .kathana-visuals {
   padding-top: 40px;
 }
 
 .kathana-visuals-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 24px;
-  align-items: start;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: center;
+  width: 100%;
 }
 
 .kathana-visual-card {
+  width: 100%;
+  max-width: 1200px;
   margin: 0;
-  padding: 14px;
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: 14px;
-  box-shadow: var(--shadow);
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .kathana-visual-card img {
   display: block;
   width: 100%;
   height: auto;
-  border-radius: 8px;
+  border-radius: 12px;
 }
 
 .kathana-visual-card figcaption {
@@ -1026,9 +1030,35 @@
 
 @media (max-width: 760px) {
   .kathana-visuals-grid {
-    grid-template-columns: 1fr;
-    max-width: 520px;
-    margin: 0 auto;
+    gap: 32px;
+  }
+
+  .kathana-visual-card img {
+    border-radius: 8px;
+  }
+}
+
+/* Kathana Wide Banner */
+.kathana-banner-art {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 48px;
+  overflow: hidden;
+  border-radius: 18px;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+.kathana-banner-art img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 640px) {
+  .kathana-banner-art {
+    margin-bottom: 32px;
+    border-radius: 12px;
   }
 }
   </style>
@@ -1084,7 +1114,17 @@
     <p class="hero-sub" data-i18n="hero_sub">
       A distraction-free screenwriting environment crafted for English and 10 Indian scripts. 
       Local-first, private by design, and built so that every writer can begin their story.
-    </p>
+        </p>
+
+    <!-- Kathana Wide Banner -->
+    <figure class="kathana-banner-art">
+      <img
+        src="images/kathana-banner.webp"
+        alt="Kathana — Where Stories Find Their Form"
+        loading="eager"
+      >
+    </figure>
+
     <div class="hero-ctas">
       <button class="btn-primary btn-hero" id="heroStartBtn" data-i18n="btn_hero_start">Step Inside — Download Free Beta</button>
       <a href="#two-worlds" class="btn-secondary" data-i18n="btn_hero_privacy">See How It Protects Your Script ➔</a>
@@ -1472,47 +1512,37 @@
   </section>
 
    <!-- Kathana Visual Showcase -->
-  <section class="section kathana-visuals" id="kathana-visuals">
-    <div class="section-header">
-      <div class="section-label">Kathana · ಕಥನ</div>
-      <h2 class="section-title">A Home for Your Stories</h2>
-      <p class="section-desc">
-        Thoughtfully designed for the people who bring stories to life.
-      </p>
-    </div>
+<section class="section kathana-visuals" id="kathana-visuals">
+  <div class="section-header">
+    <div class="section-label">Kathana · ಕಥನ</div>
+    <h2 class="section-title">A Home for Your Stories</h2>
+    <p class="section-desc">
+      Thoughtfully designed for the people who bring stories to life.
+    </p>
+  </div>
 
-    <div class="kathana-visuals-grid">
+  <div class="kathana-visuals-grid">
 
-      <figure class="kathana-visual-card">
-        <img
-          src="images/kathana-brand.webp"
-          alt="Kathana brand artwork featuring its logo and name"
-          loading="lazy"
-        >
-        <figcaption>Our Identity</figcaption>
-      </figure>
+    <figure class="kathana-visual-card">
+      <img
+        src="images/kathana-cover.webp"
+        alt="Kathana cover artwork"
+        loading="lazy"
+      >
+      <figcaption>Made for Storytellers</figcaption>
+    </figure>
 
-      <figure class="kathana-visual-card">
-        <img
-          src="images/kathana-cover.webp"
-          alt="Kathana cover artwork"
-          loading="lazy"
-        >
-        <figcaption>Made for Storytellers</figcaption>
-      </figure>
+    <figure class="kathana-visual-card">
+      <img
+        src="images/kathana-brand.webp"
+        alt="Kathana brand artwork featuring its logo and name"
+        loading="lazy"
+      >
+      <figcaption>Our Identity</figcaption>
+    </figure>
 
-      <figure class="kathana-visual-card">
-        <img
-          src="images/kathana-banner.webp"
-          alt="Kathana banner artwork"
-          loading="lazy"
-        >
-        <figcaption>Where Stories Find Their Form</figcaption>
-      </figure>
-
-    </div>
-  </section>
-
+  </div>
+</section>
     <!-- From the Maker Letter with authentic Kannada name and studio -->
   <section class="section" id="maker">
     <div class="maker-letter">
