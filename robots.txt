@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jagnaampictures.github.io/kathana-website/sitemap.xml
